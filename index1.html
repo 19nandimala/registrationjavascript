@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Continental University Registration Program</title>
+</head>
+<body>
+
+  <h1>Continental University Registration Program</h1>
+
+  <form action="/calculate" method="post">
+
+    <label for="student_type">Student Type:</label>
+    <select name="student_type">
+      <option value="bachelor">Bachelor</option>
+      <option value="master">Master</option>
+    </select>
+
+    <label for="residency">Residency:</label>
+    <select name="residency">
+      <option value="in-state">In-state</option>
+      <option value="out-of-state">Out-of-state</option>
+    </select>
+
+    <label for="credits_taking">Number of Credits Taking:</label>
+    <input type="number" name="credits_taking" required>
+
+    <input type="submit" value="Calculate">
+
+  </form>
+<script src="registration.js"></script>
+</body>
+</html>
